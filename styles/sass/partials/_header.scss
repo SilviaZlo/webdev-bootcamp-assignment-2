@@ -78,6 +78,26 @@ header {
         margin-top: 7%;
         z-index: 10; 
     }
+
+    .toggleButton {
+        // for the burguer to be all the way on the right side of the screen without messing with the flow of the rest of the elements
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none; // by default the hamburguer won´t show, because we don´t want it in larger screens
+        flex-direction: column; //so the spans line up on top of it other
+        justify-content: space-between; //to have as much space possible in between each span of the toggleButton
+        width: 30px;
+        height: 21px;
+    }
+
+    // adding bars to out toggle button (because the spans have no content inside of them
+    .toggleButton .bar {
+        height: 3px; // each line will be 3px high
+        width: 100%; // will take 100% of the width inside of the hamburguer
+        background-color: white; // so that each line of the burguer shows up
+        border-radius: 10px;
+    }
 }
 
 
