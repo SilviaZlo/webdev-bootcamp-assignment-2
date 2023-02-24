@@ -1,0 +1,287 @@
+// tablets
+@media (max-width: 800px) {
+    // main page/index.html
+    header {
+        // display: flex;
+        // flex-direction: column;
+        height: 550px;
+        // align-items: center;
+        // justify-content: center;
+
+        .navBar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            }   
+    } // end of .header
+    
+
+        .secondImage {
+            display: none;
+        }
+
+        .centralHeaderDiv {
+
+            margin: 0 auto;
+            padding: 0;
+            
+            h1 {
+                font-size: 130px;
+                margin: 0;
+                padding: 0;
+                line-height: normal;
+            }
+
+            h2 {
+                font-size: 47px;
+                margin-top: -50px;
+                padding-left: 4px;
+                line-height: normal;
+            }     
+        } // end of .centralHeaderDiv    
+    } // end of header
+
+    // section ABOUT
+    .about {
+        padding: 0;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            
+            .icons {
+                margin-left: 25%;
+            }
+            
+        }
+    }
+
+    // section PLAN AHEAD
+    .locations {
+        .flexContainer {
+            flex-direction: column;
+
+            .container {
+                max-width: 100%;
+
+                h3 {
+                    margin-top: 0.5rem;
+                }
+
+                img {
+                    max-width:35%;
+                }
+
+
+                .button {
+                    max-width: 10rem;
+                    padding: 0.25rem 2.5rem;
+                }
+
+                .newLocations,
+                .planAhead {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .planAhead {
+                    align-items: flex-start;
+                }
+
+                .newLocations {
+                    .button {
+                        align-self: flex-end;
+                    }
+                }
+
+                .imageOne {
+                    // align-self: flex-end; //parou de funcionar
+                    margin-left: 445px;
+                    margin-bottom: -20px;
+                }
+
+                .imageTwo {
+                    align-self: flex-start;
+                    margin: -2.5rem 0 0 0;
+                    margin-bottom: 50px;
+                    padding-bottom: -20px;
+                }
+            } // end of .container
+        } // end of .flexContainer
+    } // end of .locations
+
+    // SECTION EVENTS - só o flex colum funcionou, de resto, nada.
+    .events{
+        .flexContainer {
+            display: flex;
+            flex-direction: column;
+            
+            .flexImage {
+                max-width: 100%;
+                align-self: flex-end; 
+                width: 20%;
+                margin-top: -2.5rem;
+            }
+
+            .flexText {
+                margin-bottom: -2.5rem;
+            }
+        } // end of .flexContainer
+    } //end of .events ANd emdiaqueries for index.html page tablet size
+
+    // contact page
+    .contactHeader {
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        align-items: center;        
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logoAnchor {
+                display: block;
+            }
+
+            .secondImage {
+                visibility: invisible;
+            }
+
+            h2 {
+                    margin-top: -2.5rem;
+                    padding-left: 0.2rem;
+                    line-height: normal;
+                }     
+        } // end of .contactHeander
+
+    .contactMain{    
+        .twoColumns {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 6.5rem;
+            padding-bottom: 1rem;
+            
+            .rightColumn {
+                // margin-right: -4.5rem;
+                width: 100%;
+                
+            }
+            
+            .rightColumn .divForm {
+                width: 100%;
+                height: 24rem;  
+                margin-right: -4.5rem;                
+
+                textarea {
+                    height: 10rem;
+                }
+
+                margin-bottom: 3.5rem;
+            } //end of .divForm
+
+            .leftColumn {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .icons {
+                    text-align: center;
+                }
+
+                .text {
+                    width: 100%;
+                    
+                    p {
+                        margin: 0.5rem auto;
+                    }
+
+                }
+            } // end of .leftColumn
+        }// end of .twoColumns
+    } //end of .contactMain
+
+    // mediaqueries for blog page
+    .blogHeader {
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+        align-items: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logoAnchor {
+            display: block;
+        }
+
+        .secondImage {
+            visibility: invisible;
+        }
+
+        h2 {
+            margin-top: -2.5rem;
+            padding-left: 0.2rem;
+            line-height: normal;
+        }
+    }
+
+    .blogMain {
+        .twoColumns{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 2.5rem;
+
+            .leftColumn {
+                width: 100%;
+                .image {
+                    display: none;
+                }
+                margin-bottom: 10rem;
+            }
+
+            .rightColumn {
+                width: 100%;
+                // align-self: center;
+                .rightColumnContent{
+                    .imageAndNewMenu {
+                        .menuImg {
+                                width: 40%;
+                                margin: 0;
+                                display: none;
+                        }
+
+                        .newMenu {
+                            margin-left: 4rem;
+                        }
+                    } // end of imageAndNewMenu 
+                    
+                    .comments {
+                        width: 90%;
+                        align-self: center;
+                    }
+
+                    .divForm {
+                        
+                        form {
+                            width: 90%;
+                            align-self: center;
+                            margin: 0 auto;
+                        }
+                    }
+                } // end of .rightColumnContent
+            } //end of .rightColumn
+               
+        }//end of .twoColumns
+    } // end of .blogMain
+} // end of tablet @mediaqueries for CONTACT PAGE
+

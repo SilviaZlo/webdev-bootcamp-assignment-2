@@ -1,0 +1,1490 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---> TYPOGRAPHY STYLES*/
+/* import Tulpen One font */
+@font-face {
+  font-family: "Tulpen One", cursive;
+  src: url(../fonts/Tulpen_One/TulpenOne-Regular.ttf);
+  font-weight: normal;
+}
+/* import Chathura font */
+@font-face {
+  font-family: "Chathura", sans-serif;
+  src: url(../fonts/Chathura/Chathura-Regular.ttf);
+  font-weight: normal;
+}
+/* import Chathura font bold*/
+@font-face {
+  font-family: "Chathura", sans-serif;
+  src: url(../fonts/Chathura/Chathura-Bold.ttf);
+  font-weight: bold;
+}
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Chathura";
+  color: #fff;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Tulpen One";
+  color: #FF8327;
+  font-size: 13.07rem;
+  text-align: center;
+  letter-spacing: 0.12rem;
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+nav {
+  font-family: "Chathura";
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 4.16rem;
+  line-height: 4.7rem;
+  letter-spacing: 0.13rem;
+  text-align: center;
+}
+
+h3,
+h4 {
+  font-size: 3.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.11rem;
+}
+
+p, h4 {
+  font-size: 1.95rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.09rem;
+}
+
+h4 {
+  text-align: center;
+}
+
+a,
+nav {
+  font-size: 1.9rem;
+  text-align: center;
+  line-height: 1.45rem;
+  letter-spacing: 0.095rem;
+}
+
+button {
+  font-family: "Chathura";
+  color: #FFFFFF;
+}
+
+/* ===>END OF TYPOGRAPHY STYLES */
+/* ---> BASE STYLES */
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: "Tulpen One", cursive;
+  font-size: 39px;
+  background-color: #BF2603;
+  border-color: #BF2603;
+  letter-spacing: 1.9px;
+  color: #FFFFFF;
+  padding: 5px 50px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* ---> HEADER STYLES */
+/* fonts
+tulpenone regular:
+font-family: 'Tulpen One',
+cursive;
+
+chatura regular and bold:
+font-family: 'Chathura',
+sans-serif;*/
+header {
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+header nav {
+  padding-top: 1px;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header li a {
+  line-height: 29px;
+  letter-spacing: 1.9px;
+  margin: 0 40px;
+  text-decoration: none;
+}
+header .logoAnchor {
+  font-family: "Tulpen One", cursive;
+  line-height: 58px;
+  letter-spacing: 2.2px;
+  font-size: 72px;
+}
+header .homeAnchor {
+  color: #FF8327;
+}
+header h1 {
+  margin: 100px 0 -70px 0;
+}
+header h2 {
+  margin: 0;
+  padding-left: 2%;
+}
+header .bigTitleDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 10;
+}
+header .centralHeaderDiv {
+  width: 39%;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 20;
+  position: relative;
+}
+header .secondImage {
+  width: 51%;
+  position: absolute;
+  margin-left: 44%;
+  margin-top: 7%;
+  z-index: 10;
+}
+header .toggleButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+header .toggleButton .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-header-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.contactHeader nav {
+  padding-top: 1px;
+}
+.contactHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactHeader li a {
+  line-height: 29px;
+  letter-spacing: 1.9px;
+  margin: 0 40px;
+  text-decoration: none;
+}
+.contactHeader .logoAnchor {
+  font-family: "Tulpen One";
+  line-height: 58px;
+  letter-spacing: 2.2px;
+  font-size: 72px;
+  width: 30px;
+  height: 21px;
+}
+.contactHeader .contactAnchor {
+  color: #FF8327;
+}
+.contactHeader .getInTouch {
+  margin: 100px 0 0 30px;
+  padding: 0;
+}
+.contactHeader h2 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-header-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.blogHeader nav {
+  padding-top: 1px;
+}
+.blogHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogHeader li a {
+  line-height: 29px;
+  letter-spacing: 1.9px;
+  margin: 0 40px;
+  text-decoration: none;
+}
+.blogHeader .logoAnchor {
+  font-family: "Tulpen One";
+  line-height: 58px;
+  letter-spacing: 2.2px;
+  font-size: 72px;
+}
+.blogHeader .blogAnchor {
+  color: #FF8327;
+}
+.blogHeader .blog {
+  margin: 100px 0 0 30px;
+  padding: 0;
+}
+.blogHeader h2 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: rgb(62, 2, 2);
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6rem 0;
+}
+footer ul img {
+  width: 90%;
+}
+footer h4 {
+  background-color: rgb(56, 54, 54);
+  margin: 0;
+  padding: 15px;
+}
+
+.about {
+  background-color: rgb(17, 16, 16);
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.flexContainers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0 70px 0;
+}
+.flexContainers .container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 60px;
+}
+.flexContainers .container .icons {
+  width: 10%;
+}
+.flexContainers .container .fa-sharp,
+.flexContainers .container .fa-solid {
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: #BF2303;
+  border-radius: 50%;
+  padding: 10px;
+}
+.flexContainers .containerText {
+  width: 90%;
+  margin-left: 10px;
+}
+.flexContainers .containerText h3 {
+  margin: 0px;
+}
+.flexContainers .containerText p {
+  margin: 0px;
+}
+.flexContainers .containerText a {
+  text-decoration: none;
+  text-align: left;
+}
+
+.locations {
+  background-color: rgb(62, 2, 2);
+  color: #FFFFFF;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flexContainer .container {
+  max-width: 45%;
+}
+.flexContainer .container h3 {
+  margin-bottom: 0px;
+}
+.flexContainer .container p {
+  margin: 10px 0 40px 0;
+}
+.flexContainer .container .newLocations {
+  padding: 40px 0 70px;
+}
+.flexContainer .container .newLocations h3 {
+  text-align: right;
+  margin-top: 15px;
+}
+.flexContainer .container .newLocations .button {
+  margin-left: 340px;
+}
+.flexContainer .container .imageOne {
+  margin-top: -30px;
+  margin-left: -70px;
+  box-shadow: 17px 19px 0px -1px rgb(255, 131, 39);
+  -webkit-box-shadow: 17px 19px 0px -1px rgb(255, 131, 39);
+  -moz-box-shadow: 17px 19px 0px -1px rgb(255, 131, 39);
+  width: 900px;
+}
+.flexContainer .container .imageTwo {
+  margin-top: 60px;
+  margin-left: 70px;
+  box-shadow: -20px 19px 0px -1px rgb(255, 131, 39);
+  -webkit-box-shadow: -20px 19px 0px -1px rgb(255, 131, 39);
+  -moz-box-shadow: -20px 19px 0px -1px rgb(255, 131, 39);
+}
+
+.hostAparty {
+  background-color: rgb(17, 16, 16);
+  color: #FFFFFF;
+  text-align: center;
+}
+.hostAparty .hostApartyDiv {
+  padding: 120px 80px 70px;
+}
+.hostAparty h3 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.hostAparty p {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.glassOfbeer {
+  background-image: url(../../../assets/banner-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SECTION 5 STYLES - EVENTS */
+.events {
+  background-color: #111010;
+  color: #FFFFFF;
+  margin-bottom: -1rem;
+}
+.events .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 130px 0 120px 0;
+}
+.events .flexImage {
+  width: 35%;
+  margin-left: 20px;
+}
+.events .flexImage img {
+  box-shadow: -20px 19px 0px -1px rgb(255, 131, 39);
+  -webkit-box-shadow: -20px 19px 0px -1px rgb(255, 131, 39);
+  -moz-box-shadow: -20px 19px 0px -1px rgb(255, 131, 39);
+}
+.events .flexText {
+  width: 63%;
+}
+.events .flexText h3 {
+  margin: 0 0 10px 0;
+  color: rgb(255, 131, 39);
+}
+.events .flexText p {
+  margin: 0;
+  margin: 0 0 30px 0;
+}
+
+.contactMain {
+  background-color: #111010;
+}
+.contactMain .twoColumns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6.5rem;
+  padding-bottom: 6rem;
+}
+.contactMain .twoColumns .leftColumn {
+  width: 30%;
+}
+.contactMain .twoColumns .leftColumn .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+.contactMain .twoColumns .leftColumn .icons .fa-brands {
+  font-size: 23px;
+}
+.contactMain .twoColumns .leftColumn .text {
+  font-size: 10px;
+}
+.contactMain .twoColumns .rightColumn {
+  width: 65%;
+}
+.contactMain .twoColumns .rightColumn .divForm {
+  background-color: #220303;
+  margin-top: -40px;
+  box-shadow: 17px 19px 0px -1px #FF8327;
+  -webkit-box-shadow: 17px 19px 0px -1px #FF8327;
+  -moz-box-shadow: 17px 19px 0px -1px #FF8327;
+  margin-top: -200px;
+  margin-right: -50px;
+}
+.contactMain .twoColumns .rightColumn .divForm input, .contactMain .twoColumns .rightColumn .divForm textarea {
+  background-color: #220303;
+  padding: 20px;
+}
+.contactMain .twoColumns .rightColumn .divForm input {
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  width: 45%;
+  margin-left: 10px;
+}
+.contactMain .twoColumns .rightColumn .divForm textarea {
+  border: 2px solid #FFFFFF;
+  margin: 40px 0;
+  width: 100%;
+}
+.contactMain .twoColumns .rightColumn .divForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px;
+}
+.contactMain .twoColumns .rightColumn .divForm input::-webkit-input-placeholder, .contactMain .twoColumns .rightColumn .divForm textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.contactMain .twoColumns .rightColumn .divForm input::-moz-placeholder, .contactMain .twoColumns .rightColumn .divForm textarea::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.contactMain .twoColumns .rightColumn .divForm input:-ms-input-placeholder, .contactMain .twoColumns .rightColumn .divForm textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.contactMain .twoColumns .rightColumn .divForm input::-ms-input-placeholder, .contactMain .twoColumns .rightColumn .divForm textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.contactMain .twoColumns .rightColumn .divForm input::placeholder,
+.contactMain .twoColumns .rightColumn .divForm textarea::placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.contactMain .twoColumns .rightColumn .divForm .nameAndEmail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogMain {
+  background-color: #111010;
+}
+.blogMain .twoColumns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.blogMain .twoColumns .leftColumn {
+  width: 40%;
+}
+.blogMain .twoColumns .leftColumn .imageAndText {
+  background-color: #220303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  padding: 0 30px px 30px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .image {
+  margin: -30px 0 0 -95px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .text h3, .blogMain .twoColumns .leftColumn .imageAndText .text p {
+  margin: 0 0;
+  padding: 0 30px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .text .ourMission a {
+  color: #FF8327;
+  text-decoration: none;
+  padding: 0 30px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .text .ourMission h3 {
+  margin: 15px 0 5px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .text .recentPosts {
+  padding-bottom: 20px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .text .recentPosts h3 {
+  margin-top: 20px;
+}
+.blogMain .twoColumns .leftColumn .imageAndText .text .recentPosts ul li {
+  color: #FF8327;
+}
+.blogMain .twoColumns .rightColumn {
+  width: 60%;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent {
+  margin-top: -250px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu {
+  padding: 40px 60px 60px 80px;
+  margin-right: -130px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .menuImg {
+  box-shadow: -20px 20px 0px #FF8327;
+  -webkit-box-shadow: -20px 20px 0px #FF8327;
+  -moz-box-shadow: -20px 20px 0px #FF8327;
+  margin-left: -60px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .newMenu {
+  padding: 30px 60px;
+  margin-left: -80px;
+  background-color: #111010;
+  border-bottom-width: 3px;
+  border-bottom-color: #FF8327;
+  border-bottom-style: solid;
+  border-left-width: 3px;
+  border-left-color: #FF8327;
+  border-left-style: solid;
+  margin-top: 13px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .newMenu h3, .blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .newMenu p {
+  margin: 20px 0;
+  padding: 0;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .newMenu p.orangeSubtitle {
+  margin: 0;
+  color: #FF8327;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .comments {
+  padding-left: 60px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .comments h3, .blogMain .twoColumns .rightColumn .rightColumnContent .comments p {
+  margin: 0;
+  padding: 0;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .comments .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .comments .post .photo {
+  width: 100px;
+  padding: 10px 20px 0 0;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .comments .post .text {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .comments .post .text .commentDate {
+  color: #FF8327;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input,
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea {
+  background-color: #111010;
+  padding: 20px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input {
+  border: none;
+  border-bottom: 2px solid #FF8327;
+  width: 45%;
+  margin-left: 10px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea {
+  border: 2px solid #FF8327;
+  margin: 40px 0;
+  width: 100%;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input::-webkit-input-placeholder, .blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input::-moz-placeholder, .blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input:-ms-input-placeholder, .blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input::-ms-input-placeholder, .blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form input::placeholder,
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form textarea::placeholder {
+  color: #FFFFFF;
+  font-family: "Chathura";
+  line-height: 29px;
+  letter-spacing: 1.9px;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form .nameAndEmail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogMain .twoColumns .rightColumn .rightColumnContent .divForm form button {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 550px;
+  }
+  header .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .navBar .toggleButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navBar .navBarLinks {
+    display: none;
+    width: 100%;
+  }
+  header .navBar .navBarLinks ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .navBar .navBarLinks ul li:hover {
+    background-color: rgb(46, 44, 44);
+  }
+  header .navBar .navBarLinks ul li {
+    width: 100%;
+  }
+  header .navBar .navBarLinks ul li a {
+    padding: 0;
+  }
+  header .navBar .navBarLinks.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navBar .logoAnchor {
+    display: none;
+  }
+  header .secondImage {
+    display: none;
+  }
+  header .centralHeaderDiv {
+    margin: 0 auto;
+    padding: 0;
+  }
+  header .centralHeaderDiv h1 {
+    font-size: 130px;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+  header .centralHeaderDiv h2 {
+    font-size: 47px;
+    margin-top: -50px;
+    padding-left: 4px;
+    line-height: normal;
+  }
+  .about {
+    padding: 0;
+  }
+  .about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .container .icons {
+    margin-left: 25%;
+  }
+  .locations .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .locations .flexContainer .container {
+    max-width: 100%;
+  }
+  .locations .flexContainer .container h3 {
+    margin-top: 0.5rem;
+  }
+  .locations .flexContainer .container img {
+    max-width: 35%;
+  }
+  .locations .flexContainer .container .button {
+    max-width: 10rem;
+    padding: 0.25rem 2.5rem;
+  }
+  .locations .flexContainer .container .newLocations,
+  .locations .flexContainer .container .planAhead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .locations .flexContainer .container .planAhead {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .locations .flexContainer .container .newLocations .button {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .locations .flexContainer .container .imageOne {
+    margin-left: 445px;
+    margin-bottom: -20px;
+  }
+  .locations .flexContainer .container .imageTwo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: -2.5rem 0 0 0;
+    margin-bottom: 50px;
+    padding-bottom: -20px;
+  }
+  .events .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .events .flexContainer .flexImage {
+    max-width: 100%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 20%;
+    margin-top: -2.5rem;
+  }
+  .events .flexContainer .flexText {
+    margin-bottom: -2.5rem;
+  }
+  .contactHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 550px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactHeader ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactHeader .logoAnchor {
+    display: block;
+  }
+  .contactHeader .secondImage {
+    visibility: invisible;
+  }
+  .contactHeader h2 {
+    margin-top: -2.5rem;
+    padding-left: 0.2rem;
+    line-height: normal;
+  }
+  .contactMain .twoColumns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 1rem;
+  }
+  .contactMain .twoColumns .rightColumn {
+    width: 100%;
+  }
+  .contactMain .twoColumns .rightColumn .divForm {
+    width: 100%;
+    height: 24rem;
+    margin-right: -4.5rem;
+    margin-bottom: 3.5rem;
+  }
+  .contactMain .twoColumns .rightColumn .divForm textarea {
+    height: 10rem;
+  }
+  .contactMain .twoColumns .leftColumn {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contactMain .twoColumns .leftColumn .icons {
+    text-align: center;
+  }
+  .contactMain .twoColumns .leftColumn .text {
+    width: 100%;
+  }
+  .contactMain .twoColumns .leftColumn .text p {
+    margin: 0.5rem auto;
+  }
+  .blogHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogHeader ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogHeader .logoAnchor {
+    display: block;
+  }
+  .blogHeader .secondImage {
+    visibility: invisible;
+  }
+  .blogHeader h2 {
+    margin-top: -2.5rem;
+    padding-left: 0.2rem;
+    line-height: normal;
+  }
+  .blogMain .twoColumns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-bottom: 2.5rem;
+  }
+  .blogMain .twoColumns .leftColumn {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .blogMain .twoColumns .leftColumn .image {
+    display: none;
+  }
+  .blogMain .twoColumns .rightColumn {
+    width: 100%;
+  }
+  .blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .menuImg {
+    width: 40%;
+    margin: 0;
+    display: none;
+  }
+  .blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .newMenu {
+    margin-left: 4rem;
+  }
+  .blogMain .twoColumns .rightColumn .rightColumnContent .comments {
+    width: 90%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blogMain .twoColumns .rightColumn .rightColumnContent .divForm form {
+    width: 90%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 25rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .logoAnchor {
+    display: none;
+  }
+  header .secondImage {
+    visibility: hidden;
+  }
+  header .centralHeaderDiv {
+    margin: 0 auto;
+    padding: 0;
+  }
+  header .centralHeaderDiv h1 {
+    font-size: 3rem;
+    margin: 2rem auto 1rem;
+    padding: 0;
+    line-height: normal;
+  }
+  header .centralHeaderDiv h2 {
+    font-size: 2rem;
+    line-height: normal;
+    padding-left: 2px;
+  }
+  header .about {
+    padding: 0;
+    width: 100%;
+  }
+  header .about .flexContainers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .about .flexContainers .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header .about .flexContainers .container .icons {
+    margin-left: 25%;
+  }
+  header .locations .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .locations .flexContainer .container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .locations .flexContainer .container h3 {
+    margin-top: 0.5rem;
+  }
+  header .locations .flexContainer .container img {
+    display: none;
+  }
+  header .locations .flexContainer .container .button {
+    max-width: 10rem;
+    padding: 0.25rem 2.5rem;
+  }
+  header .locations .flexContainer .container .planAhead {
+    text-align: center;
+  }
+  header .locations .flexContainer .container .newLocations .button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  header .events .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .events .flexContainer .flexImage {
+    max-width: 100%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 20%;
+    margin-top: -2.5rem;
+  }
+  header .events .flexContainer .flexText {
+    margin-bottom: -2.5rem;
+  }
+}

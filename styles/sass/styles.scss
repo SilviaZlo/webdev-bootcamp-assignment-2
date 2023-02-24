@@ -1,0 +1,30 @@
+// COLOURS::after
+// primary (black): #111010;
+// secondary:(dusty orange): #FF8327;
+// tertiary(dark red): #220303; 
+// quaternary (off white): #FFFFF;
+// quinary(rust red): #BF2603;
+
+// HEADINGS:
+// h1: 261.4px;
+// h2: 83.2px;
+// h3: 68px;
+// h4: 68px;
+// p: 39px;
+// a, nav: 38px;
+
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/typography";
+@import "./partials/baseStyles";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/section1About";
+@import "./partials/section2PlanAhead";
+@import "./partials/section3HostAparty";
+@import "./partials/section4ImageOfBeer";
+@import "./partials/section5Events";
+@import "./partials/contactPageMain";
+@import "./partials/blogPageMain";
+@import "./partials/mediaQueriesTablet";
+@import "./partials/mediaQueriesPhone";

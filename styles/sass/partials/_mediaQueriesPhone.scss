@@ -1,0 +1,141 @@
+// MEDIA QUERIES FOR PHONE SIZE
+@media (min-width: 320px) and (max-width: 500px) {
+
+    // main page/index.html
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+        align-items: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logoAnchor {
+            display: none;
+        }
+
+        .secondImage {
+            visibility: hidden;
+        }
+
+        .centralHeaderDiv {
+            margin: 0 auto;
+            padding: 0;
+
+            h1 {
+                font-size: 3rem;
+                margin: 2rem auto 1rem;
+                padding: 0;
+                line-height: normal;
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: normal;
+                padding-left: 2px;
+            }
+        }
+
+        // section ABOUT
+
+    // mediaqueries styles didn´t work in section .about
+    .about {
+        padding: 0;
+        width: 100%; //new
+
+        .flexContainers {
+            // didnt work
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .icons {
+                    margin-left: 25%;
+                }
+            }
+        }//end of .flexContainers  
+    }// end of .about section
+
+    
+
+    // section PLAN AHEAD
+    .locations {
+        .flexContainer {
+            flex-direction: column;
+            align-items: center;
+
+            .container {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h3 {
+                    margin-top: 0.5rem;
+                }
+
+                img {
+                    display: none;
+                }
+
+                .button {
+                    max-width: 10rem;
+                    padding: 0.25rem 2.5rem;
+                }
+
+                .planAhead {
+                    text-align: center;
+                }
+
+                .newLocations {
+                    .button {
+                        align-self: center;
+                    }
+                }
+            }
+
+                // end of .container
+            }
+        }
+
+        // end of .locations
+
+        // SECTION EVENTS - só o flex colum funcionou, de resto, nada.
+        .events {
+            .flexContainer {
+                display: flex;
+                flex-direction: column;
+
+                .flexImage {
+                    max-width: 100%;
+                    align-self: flex-end;
+                    width: 20%;
+                    margin-top: -2.5rem;
+                }
+
+                .flexText {
+                    margin-bottom: -2.5rem;
+                }
+            }
+
+            // end of .flexContainer
+        }
+
+        //end of .events ANd emdiaqueries for index.html page
+
+
+    }
+
+    // end of header - media queries for cel phone size
+}
+
+//end of media queries for cel phone size (miin of 320px and max of 500px)

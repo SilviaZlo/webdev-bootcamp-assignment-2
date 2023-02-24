@@ -1,0 +1,24 @@
+/* FOOTER STYLES */
+
+footer {
+    background-color: rgb(62, 2, 2);
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 6rem 0;
+        // margin: 100px 0;
+        // flex-basis: auto;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    h4 {
+        background-color: rgb(56, 54, 54);
+        margin: 0;
+        padding: 15px;
+        }
+    }

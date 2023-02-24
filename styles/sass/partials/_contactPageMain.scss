@@ -1,0 +1,81 @@
+.contactMain {
+    background-color: $primary; //#111010;
+
+    .twoColumns {
+        display: flex;
+        padding-top: 6.5rem;
+        padding-bottom: 6rem;
+
+        .leftColumn {
+            width: 30%;
+
+            .icons {
+                display: flex;
+                justify-content: space-between;
+                width: 45%;
+
+                .fa-brands {
+                font-size: 23px;
+                }
+            }
+
+            .text {
+                font-size: 10px;
+            }
+        }
+
+        .rightColumn {
+            width: 65%;
+
+            .divForm {
+                background-color: $tertiary;// #220303;
+                margin-top: -40px;
+                    box-shadow: 17px 19px 0px -1px $secondary;// rgba(255, 131, 39, 1);
+                    -webkit-box-shadow: 17px 19px 0px -1px $secondary; // rgba(255, 131, 39, 1);
+                    -moz-box-shadow: 17px 19px 0px -1px $secondary; // rgba(255, 131, 39, 1);
+                margin-top: -200px;
+                margin-right: -50px;
+
+                
+
+                input, textarea { 
+                    background-color: $tertiary;// #220303;
+                    padding: 20px;
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 2px solid $quaternary;// #FFFFFF;
+                    width: 45%;
+                    margin-left: 10px;
+                }
+
+                textarea {
+                    border: 2px solid $quaternary; // #FFFFFF;
+                    margin: 40px 0;
+                    width: 100%;
+                }
+                
+
+                form {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 60px;
+                        
+                    }
+
+                    input::placeholder,
+                    textarea::placeholder {
+                        color: $quaternary; // #FFFFFF;
+                        font-family: $bodyFont;//'Chathura',
+                        line-height: 29px;
+                        letter-spacing: 1.9px;
+                    }
+
+                    .nameAndEmail {
+                        justify-content: space-between;
+                    }
+            }
+        }
+    }
+}

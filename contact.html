@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <!-- LINK TO FONT TULPEN ONE REGULAR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">
+
+    <!-- LINK TO FONT CHATHURA REGULAR AND BOLD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- link to font awsome - icons - library -->
+    <script src="https://kit.fontawesome.com/6e60d1847d.js" crossorigin="anonymous"></script>
+
+    <!-- LINK TO STYLESHEET -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- LINK TO FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6e60d1847d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="contactHeader">
+        <div class="wrapper">
+            <!-- nav part of header -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="index.html" class="logoAnchor">Bar-One</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html" class="contactAnchor">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- nav big title -->
+            <div class="leftHeaderDiv">
+                <div class="getInTouch">
+                    <h2>Get in touch</h2>
+                </div><!-- end of .bigTitleDiv -->
+            </div><!-- end of .leftHeaderDiv -->
+        </div><!-- end of .wrapper -->
+    </header>
+
+    <section class="contactMain">
+        <div class="wrapper">
+            <div class="twoColumns">
+
+                <div class="leftColumn">
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <!-- include font awesome icons -->
+                    </div><!-- end of .icons -->
+
+                    <div class="text>">
+                        <p>info@email.com</p>
+                        <p>123 - 456 - 7890
+                        123 Queen Street West, Unit
+                        10
+                        Toronto, Ontario
+                        M5V2D5
+                        </p>
+                    </div><!-- end of .text -->
+                </div><!-- end of .leftColumn -->
+
+                <div class="rightColumn">
+                    <div class="divForm">
+                        <form>
+                            <form action="" class="contactForm" name="contactForm">
+                                <div clas="nameAndEmail">
+                                    <label for="name" class="sr-only">Name</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" id="email" placeholder="Email">
+                                </div>
+                                
+                                <div class="message">
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                </div>
+                            
+                                <button class="button" type="submit">Submit</button>
+                        </form>
+                    </div><!-- end of .divForm> -->
+                </div><!-- end of .rightColumn -->
+            </div><!-- end of .twoColumns -->
+        </div><!-- end of .wrapper -->
+    </section>
+
+    <footer>
+        <h4>Copyright © 2019 HackerYou</h4>
+    </footer>
+</body>
