@@ -12,7 +12,46 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            }   
+        
+            .toggleButton {
+                display: flex;
+            }
+    
+            .navBarLinks {
+                display: none;
+                width: 100%;
+            }
+    
+            .navBarLinks ul {
+                width: 100%;
+                flex-direction: column;
+                // display: flex;
+                // // visibility: hidden;
+                // flex-direction: column;
+                // align-items: center;
+                // padding: 0;
+    
+                li:hover {
+                    background-color: rgb(46, 44, 44);
+                }
+    
+                li {
+                    width: 100%;
+                }
+    
+                li a {
+                    padding: 0;
+                }
+            }
+    
+            .navBarLinks.active {
+                display: flex;
+            }
+    
+            .logoAnchor {
+                display: none;
+            }
+        } // end of .navBar
     } // end of .header
     
 
@@ -283,5 +322,5 @@
                
         }//end of .twoColumns
     } // end of .blogMain
-} // end of tablet @mediaqueries for CONTACT PAGE
+ // end of tablet @mediaqueries for CONTACT PAGE
 
