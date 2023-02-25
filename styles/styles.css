@@ -422,11 +422,10 @@ header .homeAnchor {
   color: #FF8327;
 }
 header h1 {
-  margin: 100px 0 -70px 0;
+  margin: 100px 0 -70px -10px;
 }
 header h2 {
   margin: 0;
-  padding-left: 2%;
 }
 header .bigTitleDiv {
   display: -webkit-box;
@@ -451,8 +450,8 @@ header .centralHeaderDiv {
 header .secondImage {
   width: 51%;
   position: absolute;
-  margin-left: 44%;
-  margin-top: 7%;
+  margin-left: 50%;
+  margin-top: 5%;
   z-index: 10;
 }
 header .toggleButton {
@@ -1090,6 +1089,9 @@ footer h4 {
   }
   header .navBar .logoAnchor {
     display: none;
+  }
+  header .bigTitleDiv {
+    margin: 200px 0 0 60px;
   }
   .secondImage {
     display: none;
