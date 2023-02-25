@@ -1,0 +1,47 @@
+[33mcommit 459a331354eb7f48034c78303c2b11feb7847c98[m[33m ([m[1;36mHEAD -> [m[1;32mmy-feature-branch[m[33m)[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Fri Feb 24 20:10:19 2023 -0500
+
+    added some media queries for index page header, but not sucess yet in keep the title centered when the nav bar slides out
+
+[33mcommit 1fe682bf5a8aa0e8b6b86b82053efeba71967355[m[33m ([m[1;31morigin/my-feature-branch[m[33m)[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Fri Feb 24 17:15:18 2023 -0500
+
+    tablet media queries - added slideout navBar
+
+[33mcommit 9d86e8d002fedea60538b46252c2fda5649a34e7[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Thu Feb 23 21:43:09 2023 -0500
+
+    added js code for toggle button to open slide out nav bar
+
+[33mcommit 2482c03ae25d7743982f40f26f376a4e1f8bf409[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Thu Feb 23 21:26:51 2023 -0500
+
+    added <a> and <span> for hamburguer menu to the heade of contact and blog pages
+
+[33mcommit cf04fafb60fff920f45b1fd77c9cef81a509a0bc[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Thu Feb 23 21:15:00 2023 -0500
+
+    added media queries for tablet size, to include hamburguer menu with slideout nav bar
+
+[33mcommit c02588f38534a6afe66cbae1eee3798fd48276ca[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Thu Feb 23 21:07:18 2023 -0500
+
+    added toggle button styles to the main page header
+
+[33mcommit eaea650411ed194f07c2811cd55cff5e9990bb8a[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Thu Feb 23 21:00:09 2023 -0500
+
+    added <a> and <span> to make the hamburguer menu - only to the header of index.html
+
+[33mcommit 32d84a17de648814117658617dff33bccdd5c455[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: SilviaZlo <silvianevesmayer@gmail.com>
+Date:   Thu Feb 23 20:05:08 2023 -0500
+
+    Added Bar_One website without slide out nav bar to main branch
