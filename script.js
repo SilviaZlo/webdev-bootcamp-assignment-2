@@ -8,3 +8,4 @@ toggleButton.addEventListener('click', () => {
     navBarLinks.classList.toggle('active')
 })
 //getting the toggle button, adding an eventlistener that is going to be clicked, and then runing the function, which will take the navBarLInks, access all the different classes on it (.classList) and toggle the active class (toggle('active'). = if the active class doesn´t exist it will add it, and if the active class does exist it will remove it. 
+

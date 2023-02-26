@@ -1459,9 +1459,6 @@ footer h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   header .navBar .toggleButton {
     display: -webkit-box;
@@ -1508,17 +1505,21 @@ footer h4 {
   header .centralHeaderDiv {
     margin: 0 auto;
     padding: 0;
+    width: 100%;
   }
-  header .centralHeaderDiv h1 {
-    font-size: 130px;
+  header .centralHeaderDiv .bigTitleDiv {
+    margin: 10rem 0 0 8rem;
+  }
+  header .centralHeaderDiv .bigTitleDiv h1 {
+    font-size: 4rem;
     margin: 0;
     padding: 0;
     line-height: normal;
   }
-  header .centralHeaderDiv h2 {
-    font-size: 47px;
-    margin-top: -50px;
-    padding-left: 4px;
+  header .centralHeaderDiv .bigTitleDiv h2 {
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    padding-left: 2px;
     line-height: normal;
   }
   .about {
