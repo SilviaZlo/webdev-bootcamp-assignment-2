@@ -455,7 +455,7 @@ header .secondImage {
   z-index: 10;
 }
 header .toggleButton {
-  position: absolute;
+  position: fixed;
   top: 0.75rem;
   right: 1rem;
   display: none;

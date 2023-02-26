@@ -80,7 +80,7 @@ header {
 
     .toggleButton {
         // for the burguer to be all the way on the right side of the screen without messing with the flow of the rest of the elements
-        position: absolute;
+        position: fixed;
         top: .75rem;
         right: 1rem;
         display: none; // by default the hamburguer won´t show, because we don´t want it in larger screens
