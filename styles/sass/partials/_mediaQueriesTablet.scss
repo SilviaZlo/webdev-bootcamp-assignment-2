@@ -55,9 +55,7 @@
 
         .bigTitleDiv {
             margin:200px 0 0 60px;
-        }
-    } // end of .header
-    
+        }    
 
         .secondImage {
             display: none;
@@ -88,13 +86,17 @@
     .about {
         padding: 0;
     
-        .container {
+        .flexContainers {
             display: flex;
             flex-direction: column;
-            
-            .icons {
-                margin-left: 25%;
+
+            .container {
+                width: 100%;
             }
+            
+        //     .icons {
+        //         margin-left: 25%;
+        //     }
             
         }
     }
@@ -103,44 +105,53 @@
     .locations {
         .flexContainer {
             flex-direction: column;
+            align-items: center;
 
             .container {
                 max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+
 
                 h3 {
                     margin-top: 0.5rem;
                 }
 
-                img {
-                    max-width:35%;
+                .imageOne, 
+                .imageTwo {
+                    display: none;
                 }
-
-
+                
                 .button {
                     max-width: 10rem;
                     padding: 0.25rem 2.5rem;
+                    align-items: center;
                 }
 
-                .newLocations,
-                .planAhead {
-                    display: flex;
-                    flex-direction: column;
-                }
+                // .newLocations,
+                // .planAhead {
+                //     display: flex;
+                //     flex-direction: column;
+                //     align-items: center;
+                // }
 
-                .planAhead {
-                    align-items: flex-start;
-                }
+                // .planAhead {
+                //     align-items: flex-start;
+                // }
 
-                .newLocations {
-                    .button {
-                        align-self: flex-end;
-                    }
-                }
+                // .newLocations {
+                //     .button {
+                //         align-self: flex-end;
+                //     }
+                // }
 
                 .imageOne {
                     // align-self: flex-end; //parou de funcionar
-                    margin-left: 445px;
-                    margin-bottom: -20px;
+                    // margin-left: 445px;
+                    // margin-bottom: -20px;
+                    align-items: center;
                 }
 
                 .imageTwo {
@@ -417,4 +428,4 @@
         }//end of .twoColumns
     } // end of .blogMain
  // end of tablet @mediaqueries for CONTACT PAGE
-
+}

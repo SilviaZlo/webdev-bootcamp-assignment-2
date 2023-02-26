@@ -11,48 +11,40 @@
     padding: 100px 0 70px 0;
 
     .container {
-            width: 50%;
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 60px;
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 60px;
 
         .icons {
             width: 10%;
-            }
-
-            .fa-sharp,
-            .fa-solid {
-                font-size: 25px;
-                color: #FFFFFF;
-                background-color: #BF2303;
-                border-radius: 50%;
-                padding: 10px;
-            }
         }
 
-        .containerText {
-            width: 90%;
-            margin-left: 10px;
-
-            h3 {
-                margin: 0px;
-            }
-
-            p {
-                margin: 0px;
-            }
-
-            a {
-                text-decoration: none;
-                text-align: left;
-            }
+        .fa-sharp,
+        .fa-solid {
+            font-size: 25px;
+            color: #FFFFFF;
+            background-color: #BF2303;
+            border-radius: 50%;
+            padding: 10px;
         }
+    }
+
+    .containerText {
+        width: 90%;
+        margin-left: 10px;
+
+        h3 {
+            margin: 0px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: left;
+        }
+    }
 }
-
-
-
-
-
-
-
-
