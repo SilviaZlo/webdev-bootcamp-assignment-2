@@ -451,7 +451,7 @@ header .secondImage {
   width: 51%;
   position: absolute;
   margin-left: 50%;
-  margin-top: 5%;
+  margin-top: 20%;
   z-index: 10;
 }
 header .toggleButton {
@@ -1063,8 +1063,12 @@ footer h4 {
     display: flex;
   }
   header .navBar .navBarLinks {
-    display: none;
+    visibility: hidden;
     width: 100%;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
   }
   header .navBar .navBarLinks ul {
     width: 100%;
@@ -1083,30 +1087,26 @@ footer h4 {
     padding: 0;
   }
   header .navBar .navBarLinks.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: visible;
+    height: 200px;
   }
   header .navBar .logoAnchor {
     display: none;
   }
-  header .bigTitleDiv {
-    margin: 200px 0 0 60px;
-  }
   header .secondImage {
     display: none;
   }
-  header .centralHeaderDiv {
-    margin: 0 auto;
-    padding: 0;
+  header .bigTitleDiv {
+    width: 100%;
+    margin: 10rem 0 0 2rem;
   }
-  header .centralHeaderDiv h1 {
+  header .bigTitleDiv h1 {
     font-size: 130px;
     margin: 0;
     padding: 0;
     line-height: normal;
   }
-  header .centralHeaderDiv h2 {
+  header .bigTitleDiv h2 {
     font-size: 47px;
     margin-top: -50px;
     padding-left: 4px;

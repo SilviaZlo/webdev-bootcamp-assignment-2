@@ -74,7 +74,7 @@ header {
         width: 51%;
         position: absolute;
         margin-left: 50%;
-        margin-top: 5%;
+        margin-top: 20%;
         z-index: 10; 
     }
 
@@ -90,7 +90,7 @@ header {
         height: 21px;
     }
 
-    // adding bars to out toggle button (because the spans have no content inside of them
+    // adding bars to the toggle button (because the spans have no content inside of them)
     .toggleButton .bar {
         height: 3px; // each line will be 3px high
         width: 100%; // will take 100% of the width inside of the hamburguer

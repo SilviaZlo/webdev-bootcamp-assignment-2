@@ -18,8 +18,12 @@
             }
     
             .navBarLinks {
-                display: none;
+                visibility: hidden;//display: none;
                 width: 100%;
+                overflow: hidden;
+                height: 0;
+                transition: all 0.5s linear;  
+                // position: absolute; --> by adding this, the slide bar slides out withou moving the h1 and h2, but it doesn´t slide in anymore.
             }
     
             .navBarLinks ul {
@@ -45,7 +49,8 @@
             }
     
             .navBarLinks.active {
-                display: flex;
+                visibility: visible;//display: flex;
+                height: 200px;
             }
     
             .logoAnchor {
@@ -53,19 +58,15 @@
             }
         } // end of .navBar
 
-        .bigTitleDiv {
-            margin:200px 0 0 60px;
-        }    
-
         .secondImage {
             display: none;
         }
 
-        .centralHeaderDiv {
+        .bigTitleDiv {
+            width: 100%;
+            margin: 10rem 0 0 2rem;
+            // position: relative;
 
-            margin: 0 auto;
-            padding: 0;
-            
             h1 {
                 font-size: 130px;
                 margin: 0;
