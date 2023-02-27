@@ -96,12 +96,8 @@
                     line-height: normal;
                 }
             }
-        }
-
-        // end of .centralHeaderDiv    
-    }
-
-    // end of header
+        }// end of .centralHeaderDiv    
+    }// end of header
 
     // section ABOUT
     .about {
@@ -259,55 +255,10 @@
             line-height: normal;
         }
 
-        .navBar {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            .toggleButton {
-                display: flex;
-            }
-
-            .navBarLinks {
-                display: none;
-                width: 100%;
-            }
-
-            .navBarLinks ul {
-                width: 100%;
-                flex-direction: column;
-                // display: flex;
-                // // visibility: hidden;
-                // flex-direction: column;
-                // align-items: center;
-                // padding: 0;
-
-                li:hover {
-                    background-color: rgb(46, 44, 44);
-                }
-
-                li {
-                    width: 100%;
-                }
-
-                li a {
-                    padding: 0;
-                }
-            }
-
-            .navBarLinks.active {
-                display: flex;
-            }
-
-            .logoAnchor {
-                display: none;
-            }
+        .logoAnchor {
+            display: none;
         }
-
-        //end of navbar
-    }
-
-    // end of .contactHeander
+        } // end of .contactHeander
 
     .contactMain {
         .twoColumns {
@@ -333,6 +284,11 @@
                 }
 
                 margin-bottom: 3.5rem;
+
+                .nameAndEmail {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
 
             //end of .divForm
@@ -354,17 +310,10 @@
                     p {
                         margin: 0.5rem auto;
                     }
-
                 }
-            }
-
-            // end of .leftColumn
-        }
-
-        // end of .twoColumns
-    }
-
-    //end of .contactMain
+            }// end of .leftColumn
+        }// end of .twoColumns
+    }//end of .contactMain
 
     // mediaqueries for blog page
     .blogHeader {
@@ -404,7 +353,7 @@
             flex-direction: column;
             width: 100%;
             padding-bottom: 2.5rem;
-            align-items: center; //nao funcionou
+            align-items: center; //didn´t apply
             
 
             .leftColumn {
@@ -429,7 +378,7 @@
 
                         // .newMenu {
                         //     margin-left: 4rem;
-                        // } --> keeps beinig appliued despite being commented out
+                        // } --> keeps being applied despite being commented out
                     }
 
                     // end of imageAndNewMenu 
@@ -454,18 +403,8 @@
                             }
                         }
                     }
-                }
-
-                // end of .rightColumnContent
-            }
-
-            //end of .rightColumn
-
-        }
-
-        //end of .twoColumns
-    }
-
-    // end of .blogMain
-    // end of tablet @mediaqueries for CONTACT PAGE
-}
+                }// end of .rightColumnContent
+            }//end of .rightColumn
+        }//end of .twoColumns
+    }// end of .blogMain
+}// end of phone @mediaqueries for CONTACT PAGE

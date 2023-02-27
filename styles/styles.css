@@ -1591,49 +1591,7 @@ footer h4 {
     padding-left: 0.2rem;
     line-height: normal;
   }
-  .contactHeader .navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contactHeader .navBar .toggleButton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contactHeader .navBar .navBarLinks {
-    display: none;
-    width: 100%;
-  }
-  .contactHeader .navBar .navBarLinks ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactHeader .navBar .navBarLinks ul li:hover {
-    background-color: rgb(46, 44, 44);
-  }
-  .contactHeader .navBar .navBarLinks ul li {
-    width: 100%;
-  }
-  .contactHeader .navBar .navBarLinks ul li a {
-    padding: 0;
-  }
-  .contactHeader .navBar .navBarLinks.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contactHeader .navBar .logoAnchor {
+  .contactHeader .logoAnchor {
     display: none;
   }
   .contactMain .twoColumns {
@@ -1661,6 +1619,15 @@ footer h4 {
   }
   .contactMain .twoColumns .rightColumn .divForm textarea {
     height: 10rem;
+  }
+  .contactMain .twoColumns .rightColumn .divForm .nameAndEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contactMain .twoColumns .leftColumn {
     width: 50%;
