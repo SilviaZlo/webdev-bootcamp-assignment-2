@@ -1231,51 +1231,6 @@ footer h4 {
     padding-left: 0.2rem;
     line-height: normal;
   }
-  .contactHeader .navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .contactHeader .navBar .toggleButton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contactHeader .navBar .navBarLinks {
-    display: none;
-    width: 100%;
-  }
-  .contactHeader .navBar .navBarLinks ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contactHeader .navBar .navBarLinks ul li:hover {
-    background-color: rgb(46, 44, 44);
-  }
-  .contactHeader .navBar .navBarLinks ul li {
-    width: 100%;
-  }
-  .contactHeader .navBar .navBarLinks ul li a {
-    padding: 0;
-  }
-  .contactHeader .navBar .navBarLinks.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contactHeader .navBar .logoAnchor {
-    display: none;
-  }
   .contactMain .twoColumns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1361,49 +1316,7 @@ footer h4 {
     padding-left: 0.2rem;
     line-height: normal;
   }
-  .blogHeader .navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .blogHeader .navBar .toggleButton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .blogHeader .navBar .navBarLinks {
-    display: none;
-    width: 100%;
-  }
-  .blogHeader .navBar .navBarLinks ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blogHeader .navBar .navBarLinks ul li:hover {
-    background-color: rgb(46, 44, 44);
-  }
-  .blogHeader .navBar .navBarLinks ul li {
-    width: 100%;
-  }
-  .blogHeader .navBar .navBarLinks ul li a {
-    padding: 0;
-  }
-  .blogHeader .navBar .navBarLinks.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .blogHeader .navBar .logoAnchor {
+  .blogHeader .logoAnchor {
     display: none;
   }
   .blogMain .twoColumns {
@@ -1459,6 +1372,9 @@ footer h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   header .navBar .toggleButton {
     display: -webkit-box;
@@ -1466,8 +1382,12 @@ footer h4 {
     display: flex;
   }
   header .navBar .navBarLinks {
-    display: none;
+    visibility: hidden;
     width: 100%;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
   }
   header .navBar .navBarLinks ul {
     width: 100%;
@@ -1486,9 +1406,8 @@ footer h4 {
     padding: 0;
   }
   header .navBar .navBarLinks.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: visible;
+    height: 200px;
   }
   header .navBar .logoAnchor {
     display: none;
@@ -1794,57 +1713,12 @@ footer h4 {
   .blogHeader .logoAnchor {
     display: block;
   }
-  .blogHeader .secondImage {
-    visibility: invisible;
-  }
   .blogHeader h2 {
     margin-top: -2.5rem;
     padding-left: 0.2rem;
     line-height: normal;
   }
-  .blogHeader .navBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .blogHeader .navBar .toggleButton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .blogHeader .navBar .navBarLinks {
-    display: none;
-    width: 100%;
-  }
-  .blogHeader .navBar .navBarLinks ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blogHeader .navBar .navBarLinks ul li:hover {
-    background-color: rgb(46, 44, 44);
-  }
-  .blogHeader .navBar .navBarLinks ul li {
-    width: 100%;
-  }
-  .blogHeader .navBar .navBarLinks ul li a {
-    padding: 0;
-  }
-  .blogHeader .navBar .navBarLinks.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .blogHeader .navBar .logoAnchor {
+  .blogHeader .logoAnchor {
     display: none;
   }
   .blogMain .twoColumns {
@@ -1857,6 +1731,9 @@ footer h4 {
             flex-direction: column;
     width: 100%;
     padding-bottom: 2.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .blogMain .twoColumns .leftColumn {
     width: 100%;
@@ -1869,12 +1746,7 @@ footer h4 {
     width: 100%;
   }
   .blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .menuImg {
-    width: 40%;
-    margin: 0;
     display: none;
-  }
-  .blogMain .twoColumns .rightColumn .rightColumnContent .imageAndNewMenu .newMenu {
-    margin-left: 4rem;
   }
   .blogMain .twoColumns .rightColumn .rightColumnContent .comments {
     width: 90%;
@@ -1886,5 +1758,21 @@ footer h4 {
     -ms-flex-item-align: center;
         align-self: center;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMain .twoColumns .rightColumn .rightColumnContent .divForm form .nameAdnEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

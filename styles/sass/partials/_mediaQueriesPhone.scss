@@ -12,36 +12,46 @@
         .navBar {
             display: flex;
             flex-direction: column;
-            // align-items: flex-start;
-
+            align-items: flex-start;
+        
             .toggleButton {
                 display: flex;
             }
-
+    
             .navBarLinks {
-                display: none;
+                visibility: hidden;//display: none;
                 width: 100%;
+                overflow: hidden;
+                height: 0;
+                transition: all 0.5s linear;  
+                // position: absolute; --> by adding this, the slide bar slides out withou moving the h1 and h2, but it doesn´t slide in anymore.
             }
-
+    
             .navBarLinks ul {
                 width: 100%;
                 flex-direction: column;
-                
+                // display: flex;
+                // // visibility: hidden;
+                // flex-direction: column;
+                // align-items: center;
+                // padding: 0;
+    
                 li:hover {
                     background-color: rgb(46, 44, 44);
                 }
-
+    
                 li {
                     width: 100%;
                 }
-
+    
                 li a {
                     padding: 0;
                 }
             }
-
+    
             .navBarLinks.active {
-                display: flex;
+                visibility: visible;//display: flex;
+                height: 200px;
             }
 
             .logoAnchor {
@@ -373,63 +383,20 @@
             display: block;
         }
 
-        .secondImage {
-            visibility: invisible;
-        }
-
         h2 {
             margin-top: -2.5rem;
             padding-left: 0.2rem;
             line-height: normal;
         }
+        
 
-        .navBar {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-
-            .toggleButton {
-                display: flex;
-            }
-
-            .navBarLinks {
-                display: none;
-                width: 100%;
-            }
-
-            .navBarLinks ul {
-                width: 100%;
-                flex-direction: column;
-                // display: flex;
-                // // visibility: hidden;
-                // flex-direction: column;
-                // align-items: center;
-                // padding: 0;
-
-                li:hover {
-                    background-color: rgb(46, 44, 44);
-                }
-
-                li {
-                    width: 100%;
-                }
-
-                li a {
-                    padding: 0;
-                }
-            }
-
-            .navBarLinks.active {
-                display: flex;
-            }
-
-            .logoAnchor {
-                display: none;
-            }
+        .logoAnchor {
+            display: none;
         }
+    }
 
         //end of navbar
-    }
+    
 
     .blogMain {
         .twoColumns {
@@ -437,6 +404,8 @@
             flex-direction: column;
             width: 100%;
             padding-bottom: 2.5rem;
+            align-items: center; //nao funcionou
+            
 
             .leftColumn {
                 width: 100%;
@@ -455,14 +424,12 @@
                 .rightColumnContent {
                     .imageAndNewMenu {
                         .menuImg {
-                            width: 40%;
-                            margin: 0;
                             display: none;
                         }
 
-                        .newMenu {
-                            margin-left: 4rem;
-                        }
+                        // .newMenu {
+                        //     margin-left: 4rem;
+                        // } --> keeps beinig appliued despite being commented out
                     }
 
                     // end of imageAndNewMenu 
@@ -478,6 +445,13 @@
                             width: 90%;
                             align-self: center;
                             margin: 0 auto;
+                            display: flex; //didn´t apply
+                            flex-direction: column;//didn´t apply
+
+                            .nameAdnEmail {
+                                display: flex;//didn´t apply
+                                flex-direction: column;//didn´t apply
+                            }
                         }
                     }
                 }
